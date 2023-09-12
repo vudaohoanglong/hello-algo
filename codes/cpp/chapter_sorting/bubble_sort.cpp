@@ -7,7 +7,7 @@
 #include "../utils/common.hpp"
 
 /* 冒泡排序 */
-void bubbleSort(vector<int> &nums) {
+void bubbleSortt(vector<int> &nums) {
     // 外循环：未排序区间为 [0, i]
     for (int i = nums.size() - 1; i > 0; i--) {
         // 内循环：将未排序区间 [0, i] 中的最大元素交换至该区间的最右端
@@ -43,7 +43,7 @@ void bubbleSortWithFlag(vector<int> &nums) {
 /* Driver Code */
 int main() {
     vector<int> nums = {4, 1, 3, 1, 5, 2};
-    bubbleSort(nums);
+    bubbleSortt(nums);
     cout << "冒泡排序完成后 nums = ";
     printVector(nums);
 
